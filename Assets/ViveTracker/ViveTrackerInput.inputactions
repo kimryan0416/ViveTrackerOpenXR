@@ -2,7 +2,7 @@
     "name": "ViveTrackerInput",
     "maps": [
         {
-            "name": "ViveTracker",
+            "name": "ViveTracker-Waist",
             "id": "6ddbecc4-8886-4646-aaa7-0994ebe1a9fc",
             "actions": [
                 {
@@ -40,6 +40,54 @@
                     "name": "",
                     "id": "7c56fdd7-973b-4e6c-a7ee-7646d9feab45",
                     "path": "<XRViveTracker>{Waist}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "ViveTracker-Camera",
+            "id": "b66c4a14-7cd5-44d5-9299-8ac06b8eb1b5",
+            "actions": [
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "d4fa902c-bdfc-41dd-9b7e-79cdc270f08a",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotation",
+                    "type": "Value",
+                    "id": "8a71fa77-c9c5-430e-b3da-a5e0189600e6",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "0e82c203-ab61-4aef-9172-db2cf8c292e5",
+                    "path": "<XRViveTracker>{Camera}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d9db8762-adca-472a-b582-e898eabaec4d",
+                    "path": "<XRViveTracker>{Camera}/deviceRotation",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
